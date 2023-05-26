@@ -1,0 +1,12 @@
+import{a as u}from"./chunk-S4B3HO37.js";import{a,b as l,c as p,d as w}from"./chunk-4BSOXMA3.js";var f=l(d=>{Object.defineProperty(d,"__esModule",{value:!0});var o=w(),n=u(),b=p(),r=class extends n.XTermController{constructor(t){super(t),this.command="",this.commands={};let s=!1;try{let e=new window.WebglAddon.WebglAddon;this.term.loadAddon(e),s=!0}catch(e){console.warn("WebGL addon threw an exception during load",e)}this.commands={help:{f:()=>{this.term.writeln(["Welcome to OpenShell! Try some of the commands below.","",...Object.keys(this.commands).map(e=>`  ${e.padEnd(10)} ${this.commands[e].description}`)].join(`
+\r`)),this.prompt(this.term)},description:"Prints this help message"},rm:{f:()=>{this.term.writeln(["rm is not allowed."].join(`\r
+`)),this.addPrompt(this.term)},description:"rm is not allowed"},cd:{f:()=>{this.term.writeln(["cd is not allowed."].join(`\r
+`)),this.addPrompt(this.term)},description:"cd is not allowed"},reboot:{f:()=>{this.term.writeln(["reboot is not allowed."].join(`\r
+`)),this.addPrompt(this.term)},description:"reboot is not allowed"}},[`OpenShell\r
+ `,`Please write a command:\r
+ `,`\r
+$ `].map((e,m)=>{setTimeout(()=>{(0,n.typewriter)(this.term,e)},1500*(m+1))}),this.term.onData(e=>{switch(e){case"":this.term.write("^C"),this.prompt(this.term);break;case"\r":this.runCommand(this.term,this.command),this.command="";break;case"\x7F":this.term._core.buffer.x>2&&(this.term.write("\b \b"),this.command.length>0&&(this.command=this.command.substr(0,this.command.length-1)));break;default:(e>=String.fromCharCode(32)&&e<=String.fromCharCode(126)||e>="\xA0")&&(this.command+=e,this.term.write(e))}})}runCommand(t,s){let i=s.trim().split(" ")[0];i.length>0&&(t.writeln(""),i in this.commands?this.commands[i].f():this.executeCmd(s)),this.prompt(t)}prompt(t){this.command="",t.write(`\r
+$ `)}addPrompt(t){t.write(`\r
+$ `)}executeCmd(t){let s=new o.Service;s.url="/admin/api/cmdshell",s.method="POST",s.done=()=>o.logger.debug("Command OK."),s.data={cmd:t},(0,o.serviceLoader)(s,!1).then(({service:i})=>{JSON.parse(i.template).message.split(`
+`).map((c,h)=>{setTimeout(()=>{(0,n.typewriter)(this.term,`${c}`),this.term.writeln("")},800*(h+1))})}).catch(i=>{o.logger.warn(i.message),b.NotificationComponent.danger(`It was not possible to execute: ${t}.`)})}};a(r,"OpenShellController");(0,o.Package)("com.qcobjects.admin.openshell.controllers",[r])});export{f as a};
+//# sourceMappingURL=chunk-YSJDF2JM.js.map

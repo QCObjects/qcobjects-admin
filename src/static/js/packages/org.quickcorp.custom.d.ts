@@ -7,4 +7,5 @@ import "./org.quickcorp.custom.controllers";
 import "./org.quickcorp.custom.views";
 import "./com.qcobjects.sdk.components";
 import "./com.qcobjects.admin.plugins.controllers";
+import "./com.qcobjects.admin.openshell.controllers";
 import "./services/com.qcobjects.admin.static.services";

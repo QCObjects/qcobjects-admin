@@ -10,4 +10,5 @@ require("./org.quickcorp.custom.controllers");
 require("./org.quickcorp.custom.views");
 require("./com.qcobjects.sdk.components");
 require("./com.qcobjects.admin.plugins.controllers");
+require("./com.qcobjects.admin.openshell.controllers");
 require("./services/com.qcobjects.admin.static.services");

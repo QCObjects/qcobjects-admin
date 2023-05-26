@@ -174,7 +174,7 @@ backend.routes.push({
 backend.routes.push({
   name:"QCObjects Admin Panel!",
   description:"With this panel, you can manage settings, configurations and install plugins",
-  path: "^/admin/settings/(.*)|/admin/plugins|/admin/handlers|/admin/libs|/admin/(install|uninstall)_(plugins|handlers|libs)/(.*)$",
+  path: "^/admin/shell|/admin/settings/(.*)|/admin/plugins|/admin/handlers|/admin/libs|/admin/(install|uninstall)_(plugins|handlers|libs)/(.*)$",
   microservice:"qcobjects-admin",
   headers: {
     "content-type": "text/html; charset=utf-8"

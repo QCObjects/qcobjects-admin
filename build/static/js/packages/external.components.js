@@ -2,6 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.typewriter = exports.XTermController = void 0;
 const qcobjects_1 = require("qcobjects");
+require("xterm/css/xterm.css");
 const xterm_1 = require("xterm");
 const typewriter = (term, line) => {
     // eslint-disable-next-line array-callback-return

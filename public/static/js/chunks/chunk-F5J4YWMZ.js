@@ -1,4 +1,0 @@
-import{a as p}from"./chunk-EEDEAUTA.js";import{a,b as i,d as l}from"./chunk-4BSOXMA3.js";var m=i(o=>{Object.defineProperty(o,"__esModule",{value:!0});var s=l(),r=p();(0,s.Package)("com.qcobjects.admin.plugins.controllers",[a(class extends r.XTermController{constructor(c){super(c),[`npm install ${this.component.data.package}`,`
-Getting command response...`].map((t,n)=>{setTimeout(()=>{(0,r.typewriter)(this.term,t),this.term.write(`\r
-$ `)},1500*(n+1))});let e=new s.Service;e.url="/admin/api/plugins/i",e.method="POST",e.done=()=>s.logger.debug(`Plugin ${this.component.data.package} was installed.`),e.data={package:this.component.data.package},(0,s.serviceLoader)(e,!1).then(({service:t})=>{let n=JSON.parse(t.template);(0,r.typewriter)(this.term,`${n.message}`)}).catch(t=>s.logger.warn(t.message))}},"InstallPluginsController")])});export{m as a};
-//# sourceMappingURL=chunk-F5J4YWMZ.js.map

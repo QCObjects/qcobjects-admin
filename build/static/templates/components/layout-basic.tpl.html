@@ -1,0 +1,52 @@
+<style>
+    /*
+    * Main Layout Styles
+    */
+    @import url('https://sdk.qcobjects.dev/css/basic-layout.css');
+    @import url('css/index.css');
+    $layout(landscape,css/desktop/index.css)
+    $layout(portrait,css/mobile/index.css)
+  
+    /* uncomment the next line to apply a theme */
+/*    @import url('css/theme/cyan/style.css');*/
+
+  </style>
+  
+  <header>
+    <quick-component name="header" componentClass="HeaderComponent" controllerClass="HeaderController" effectClass="MainTransitionEffect">
+      <routing path="^/admin/plugins$" name="header-plugins"></routing>
+      <routing path="^/admin/handlers$" name="header-handlers"></routing>
+      <routing path="^/admin/libs$" name="header-libs"></routing>
+      <routing path="^/admin/settings/{package}$" name="header-feature-unavailable"></routing>
+      <routing path="^/admin/{operation}_{packageType}/{package}" name="header-install-packages"></routing>
+      <routing path="^#|/$" name="header"></routing>
+      <routing path="^$" name="header"></routing>
+  </quick-component>
+  </header>
+  <aside>
+    <nav>
+      <span class="topnav">
+        <quick-component name="topmenu">
+            <routing path="^#|/$" name="topmenu"></routing>
+            <routing path="^$" name="topmenu"></routing>
+        </quick-component>
+      </span>
+      <button  aria-label="nav button" role="button" tabindex="-1" class="navbtn" onclick="global.sideNavController.toggle()"></button>
+      <quick-component name="nav" controllerClass="SideNavController"></quick-component>
+    </nav>
+  </aside>
+  <main role="main">
+    <section>
+      <quick-component name="contentblock" effectClass="MainTransitionEffect" shadowed="true">
+          <routing path="^#|/$" name="contentblock"></routing>
+          <routing path="^$" name="contentblock"></routing>
+      </quick-component>
+    </section>
+  </main>
+  <footer>
+    <quick-component name="footer" shadowed="true" effectClass="MainTransitionEffect">
+        <routing path="^#|/$" name="footer"></routing>
+        <routing path="^$" name="footer"></routing>
+    </quick-component>
+  </footer>
+  

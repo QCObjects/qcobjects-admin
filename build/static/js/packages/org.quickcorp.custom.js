@@ -1,0 +1,13 @@
+"use script";
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("./com.qcobjects.installer");
+require("./org.quickcorp.custom.effects");
+require("./org.quickcorp.custom.models");
+require("./com.qcobjects.admin.components");
+require("./com.qcobjects.admin.controllers");
+require("./org.quickcorp.custom.controllers");
+require("./org.quickcorp.custom.views");
+require("./com.qcobjects.sdk.components");
+require("./com.qcobjects.admin.plugins.controllers");
+require("./services/com.qcobjects.admin.static.services");

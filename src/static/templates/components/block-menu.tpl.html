@@ -1,0 +1,21 @@
+<style>
+    :host{
+        display: grid;
+        grid-template-columns: repeat(3, 220px);
+        grid-template-rows: auto;
+        width: 100%;
+        gap: 20px;
+        justify-content: center;
+        justify-items: center;        
+    }
+</style>
+
+<quick-component name="card" data-title="Plugins"
+    data-description="Install plugins from NPM direcly here." data-image="img/tools/plugins-icon.svg"
+    data-url="/admin/plugins"></quick-component>
+<quick-component name="card" data-title="Handlers"
+    data-description="Install handlers to manage micro-services." data-image="img/tools/handlers-icon.svg"
+    data-url="/admin/handlers"></quick-component>
+<quick-component name="card" data-title="Libs"
+    data-description="Install Libraries from catalog" data-image="img/tools/libs-icon.svg"
+    data-url="/admin/libs"></quick-component>

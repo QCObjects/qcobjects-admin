@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../../build/static/assets/css/components/grid-table.css"],
+  "sourcesContent": [".container {\n    border: 0;\n    border-radius: 20px;\n    overflow-x: auto;\n    overflow-y: scroll;\n    width: auto;\n    max-width: 1361px;\n    height: 100%;\n    background: #0807060f;\n    padding:0;\n    padding-bottom: 10px;\n    margin: 20px auto;\n    box-shadow: rgba(228, 228, 234, 0.22) 0 22px 25px 0, rgba(228, 228, 234, 0.5) 0 9px 23px 0;\n\n}\n.container:hover{\n    box-shadow: rgba(228, 228, 234, 0.56) 0 22px 32px 0, rgba(228, 228, 234, 0.64) 0 9px 28px 0;\n}\ntr.tr_head {\n    background: #fefefee5;\n}\n\n\ntable {\nwidth: 100%;\nheight: 537px;\nmargin: 0 auto;\ndisplay: table;\noverflow-x: auto;\nborder-spacing: 0;\n}\n\ntbody {\nwhite-space: nowrap;\n}\ntd {text-align:center;padding:10px;}\n\nth,\ntd {\npadding: 43px 44px;\nborder-top-width: 0;\nborder-left-width: 0;\n}\n\nth {\nposition: sticky;\ntop: 0;\nbackground: #f2f2f2;\nvertical-align: bottom;\n}\n\ntr:nth-child(even) {background: #ffffffde;}\ntr:nth-child(odd) {background: #ffffff82;}\n\nth:last-child,\ntd:last-child {\nborder-right-width: 0;\n}\n\ntr:last-child td {\nborder-bottom-width: 0;\n}\n\ntr:hover {\n    background-color: #c9c9c9;\n}\n\n"],
+  "mappings": "AAAA,WACI,SADJ,mBAGI,gBACA,kBACA,WACA,iBACA,YACA,qBARJ,kCAYI,sDAGJ,iBACI,sDAEJ,WACI,qBAIJ,MACA,WACA,aAzBA,cA2BA,cACA,gBACA,iBAGA,MACA,mBAEA,GAAI,kBAnCJ,aAqCA,MArCA,kBAwCA,mBACA,oBAGA,GACA,gBACA,MACA,mBACA,sBAGA,mBAAoB,qBACpB,kBAAmB,qBAEnB,4BAEA,qBAGA,iBACA,sBAGA,SACI",
+  "names": []
+}

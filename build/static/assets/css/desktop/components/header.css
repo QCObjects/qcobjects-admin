@@ -1,0 +1,12 @@
+:host {
+    place-items: center;
+    width: 100%;
+  }
+
+  .header-container {
+    padding-top: 80px;
+  }
+  .snippet-svg > svg {
+    transform: scale(0.7);
+    width: 100%;
+  }

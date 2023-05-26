@@ -1,0 +1,26 @@
+/*!
+ * QCObjects SDK @VERSION
+ * https://sdk.qcobjects.com
+ *
+ *
+ * QCObjects SDK is a part of QCObjects
+ *
+ * Cross Browser Javascript Framework for MVC Patterns
+ * QuickCorp/QCObjects is licensed under the
+ * GNU Lesser General Public License v3.0
+ * [LICENSE] (https://github.com/QuickCorp/QCObjects/blob/master/LICENSE.txt)
+ *
+ * Permissions of this copyleft license are conditioned on making available
+ * complete source code of licensed works and modifications under the same
+ * license or the GNU GPLv3. Copyright and license notices must be preserved.
+ * Contributors provide an express grant of patent rights. However, a larger
+ * work using the licensed work through interfaces provided by the licensed
+ * work may be distributed under different terms and without source code for
+ * the larger work.
+ *
+ * Copyright (C) 2015 Jean Machuca,<correojean@gmail.com>
+ *
+ * Everyone is permitted to copy and distribute verbatim copies of this
+ * license document, but changing it is not allowed.
+ */.card{box-shadow:#e4e4ea38 0 22px 25px,#e4e4ea80 0 9px 23px;transition:all .3s ease-in-out;width:100%;min-width:200px;min-height:100%;height:auto;border-radius:30px}.img,.title,.description{overflow:hidden}.card:hover{box-shadow:#e4e4ea8f 0 22px 32px,#e4e4eaa3 0 9px 28px}.card .container{padding:2px 16px;min-height:100%}.card img,div>div.img{border-radius:30px 30px 0 0;min-height:100px}#slot-logo::slotted(img){border-radius:30px 30px 0 0;min-height:100px}.card button{border:none;outline:0;padding:12px;color:#fff;background-color:#000;text-align:center;cursor:pointer;width:100%;font-size:18px}.card button:hover{opacity:.7}#slot-card-button::slotted(button){border:none;outline:0;padding:12px;color:#fff;background-color:#000;text-align:center;cursor:pointer;width:100%;font-size:18px}#slot-card-button::slotted(button):hover{opacity:.7}.card{max-height:1600px}#slot-card-description::slotted(div){height:50px;min-height:50px;max-height:50px;overflow-y:clip}
+/*# sourceMappingURL=card.css.map */

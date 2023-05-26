@@ -1,0 +1,12 @@
+<style>
+    :host {
+        padding-top: 10px;
+    }
+</style>
+<quick-component name="block-menu" componentClass="BlockMenuComponent">
+    <routing name="available-plugins" path="^/admin/plugins$"></routing>
+    <routing name="available-handlers" path="^/admin/handlers$"></routing>
+    <routing name="available-libs" path="^/admin/libs$"></routing>
+    <routing path="^/admin/install_{packageType}/{package}$" name="xterm-install-packages" controllerClass="InstallPluginsController"></routing>
+    <routing path="^/admin/uninstall_{packageType}/{package}$" name="xterm-install-packages" controllerClass="UninstallPluginsController"></routing>
+</quick-component>

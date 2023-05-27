@@ -1,5 +1,4 @@
 import { Controller, ControllerParams, Package } from "qcobjects";
-import "xterm/css/xterm.css";
 import { Terminal } from "xterm";
 
 const typewriter = (term:Terminal,line:string) => {

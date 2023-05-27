@@ -52,28 +52,6 @@ backend.routes.push({
     }
 });
 backend.routes.push({
-    name: "Admin Static Assets Xterm CSS",
-    description: "Admin Static Assets Xterm CSS",
-    path: "^/admin/external/xterm/css/(.*)$",
-    microservice: "com.qcobjects.backend.microservice.static",
-    redirect_to: "./node_modules/qcobjects-admin/node_modules/xterm/css/$1",
-    responseHeaders: {},
-    cors: {
-        "allow_origins": "*"
-    }
-});
-backend.routes.push({
-    name: "Admin Static Assets Xterm JS",
-    description: "Admin Static Assets Xterm JS",
-    path: "^/admin/external/xterm/js/(.*)$",
-    microservice: "com.qcobjects.backend.microservice.static",
-    redirect_to: "./node_modules/qcobjects-admin/node_modules/xterm/lib/$1",
-    responseHeaders: {},
-    cors: {
-        "allow_origins": "*"
-    }
-});
-backend.routes.push({
     name: "Admin Static Assets IMG",
     description: "Admin Static Assets IMG",
     path: "^/admin/img/(.*)$",

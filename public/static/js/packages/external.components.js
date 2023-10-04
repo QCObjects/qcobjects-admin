@@ -1,2 +1,2 @@
-import{a}from"../chunks/chunk-EEDEAUTA.js";import"../chunks/chunk-4BSOXMA3.js";export default a();
+import{a}from"../chunks/chunk-JXOWUQJX.js";import"../chunks/chunk-NOVTE6NR.js";import"../chunks/chunk-LILTOOK2.js";export default a();
 //# sourceMappingURL=external.components.js.map

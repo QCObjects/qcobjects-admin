@@ -11,3 +11,20 @@
     height: 100%;
     margin: 30px auto;
   }
+
+ .snippet-svg {
+    display: block;
+    background-color: #0b0d19;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 7px;
+    box-shadow: #e4e4ea38 0 22px 25px, #000000de 0 9px 23px;
+}
+
+.snippet-svg > svg{
+  width: 98%;
+  /* height: 100%; */
+  margin: 5px auto;
+  border-radius: 0;
+}

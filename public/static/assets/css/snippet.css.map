@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../build/static/assets/css/snippet.css"],
+  "sourcesContent": [".snippet-svg {\n    display: block;\n    background-color: #0b0d19;\n    width: 70%;\n    height: 100%;\n    margin: 0 auto;\n    border-radius: 7px;\n    box-shadow: rgba(228, 228, 234, 0.22) 0 22px 25px 0, rgb(0 0 0 / 87%) 0 9px 23px 0;\n}\n\n.snippet-svg:hover {\n    box-shadow: #e4e4ea38 0 22px 25px, #000000de 6px 13px 23px;\n\n}\nsvg text{\n    font-size: x-small;\n    text-align: center;\n  }\n  "],
+  "mappings": "AAAA,aACI,cACA,yBACA,UACA,YAJJ,gCAOI,sDAGJ,mBACI,yDAGJ,SACI,kBACA",
+  "names": []
+}

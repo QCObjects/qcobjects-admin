@@ -2,6 +2,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 require("./com.qcobjects.installer");
+require("./com.qcobjects.auth.login");
+require("./com.qcobjects.main.components");
 require("./org.quickcorp.custom.effects");
 require("./org.quickcorp.custom.models");
 require("./com.qcobjects.admin.components");
@@ -12,3 +14,4 @@ require("./com.qcobjects.sdk.components");
 require("./com.qcobjects.admin.plugins.controllers");
 require("./com.qcobjects.admin.openshell.controllers");
 require("./services/com.qcobjects.admin.static.services");
+require("./services/com.qcobjects.admin.static.auth.services");

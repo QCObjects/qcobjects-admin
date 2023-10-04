@@ -10,4 +10,5 @@
     <routing path="^/admin/install_{packageType}/{package}$" name="xterm-install-packages" controllerClass="InstallPluginsController"></routing>
     <routing path="^/admin/uninstall_{packageType}/{package}$" name="xterm-install-packages" controllerClass="UninstallPluginsController"></routing>
     <routing path="^/admin/shell$" name="xterm-openshell" controllerClass="OpenShellController"></routing>
+    <routing path="^/admin/user|/admin/user/(.*)$" name="user-profile"></routing>
 </quick-component>

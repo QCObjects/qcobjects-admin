@@ -1,0 +1,2 @@
+import{b as i}from"./chunk-64ZU2WSF.js";import{a as t,d as r}from"./chunk-LILTOOK2.js";var u=r(s=>{Object.defineProperty(s,"__esModule",{value:!0});var e=i();(0,e.RegisterWidgets)("layout-basic","splash-screen","github-grid","octocat-icon","lib-list");(0,e.RegisterWidgets)("gitpod-button","netlify-button","aws-button","github-button","codespaces-button","deploy-grid");(0,e.RegisterWidget)("version-string");var n=t((c,o)=>e.global.get("user",{})[o],"userProfile");new e.Processor().setProcessor(n)});export{u as a};
+//# sourceMappingURL=chunk-ZDP5W565.js.map

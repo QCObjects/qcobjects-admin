@@ -6,7 +6,6 @@
 import global, { Package, Controller, logger, _DOMCreateElement, 
                 type Effect, New, ClassFactory, type QCObjectsElement, 
                 type QCObjectsShadowedElement, type Component, type ControllerParams } from "qcobjects";
-import { Fade } from "qcobjects-sdk";
 
 Package("org.quickcorp.custom.controllers", [
   class MainController extends Controller {
@@ -50,7 +49,7 @@ Package("org.quickcorp.custom.controllers", [
 
     done(...args: any[]) {
       const _ret_ = super.done(args);
-      this.effect = New(Fade, {
+      this.effect = New(ClassFactory("Fade"), {
         duration: 300
       });
       (global as any).sideNavController = this;

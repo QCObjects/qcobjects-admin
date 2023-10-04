@@ -1,0 +1,2 @@
+import{b as i}from"./chunk-NOVTE6NR.js";import{a as t,d as c}from"./chunk-LILTOOK2.js";var o=c(e=>{Object.defineProperty(e,"__esModule",{value:!0});var s=i();(0,s.Package)("org.quickcorp.custom.models",[t(class extends s.VO{constructor(){super(...arguments),this.first_name="",this.last_name="",this.address="",this.postalCode="",this.city="",this.country="",this.email="",this.phone=""}},"ContactVO")])});export{o as a};
+//# sourceMappingURL=chunk-U7XEHF4H.js.map

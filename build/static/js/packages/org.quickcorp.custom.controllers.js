@@ -27,7 +27,6 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const qcobjects_1 = __importStar(require("qcobjects"));
-const qcobjects_sdk_1 = require("qcobjects-sdk");
 (0, qcobjects_1.Package)("org.quickcorp.custom.controllers", [
     class MainController extends qcobjects_1.Controller {
         constructor(controller) {
@@ -63,7 +62,7 @@ const qcobjects_sdk_1 = require("qcobjects-sdk");
         }
         done(...args) {
             const _ret_ = super.done(args);
-            this.effect = (0, qcobjects_1.New)(qcobjects_sdk_1.Fade, {
+            this.effect = (0, qcobjects_1.New)((0, qcobjects_1.ClassFactory)("Fade"), {
                 duration: 300
             });
             qcobjects_1.default.sideNavController = this;

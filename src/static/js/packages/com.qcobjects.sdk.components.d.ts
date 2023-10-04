@@ -15,7 +15,7 @@ declare class GridTableComponent extends Component {
     tplsource: string;
     template: string;
     gridColumns?: Array<any>;
-    __instanceID: number | undefined;
+    __instanceID: number;
     constructor(o: GridComponentParams);
     hasColumn(k: string): boolean;
     getColumnLabel(k: string): string;

@@ -1,5 +1,9 @@
 {
   "extends": "qcobjects-tsconfig/tsconfig.d.json",
+  "compilerOptions": {
+    "outFile": "src/types.d.ts",
+    "typeRoots": ["types", "node_modules/@types", "@typescript-eslint"]
+  },
   "include": ["src/**/*.ts"],
   "exclude": ["src/**/*.spec.js", "src/*.js", "src/*.d.ts"]
 }

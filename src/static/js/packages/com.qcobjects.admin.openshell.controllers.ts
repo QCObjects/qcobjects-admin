@@ -9,11 +9,9 @@ class OpenShellController extends XTermController {
 
     constructor(controller:ControllerParams){
         super(controller);
-        let isWebglEnabled = false;
         try {
           const webgl = new (window as any).WebglAddon.WebglAddon();
           this.term.loadAddon(webgl);
-          isWebglEnabled = true;
         } catch (e) {
           console.warn("WebGL addon threw an exception during load", e);
         }

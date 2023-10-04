@@ -8,11 +8,9 @@ class OpenShellController extends external_components_1.XTermController {
         super(controller);
         this.command = "";
         this.commands = {};
-        let isWebglEnabled = false;
         try {
             const webgl = new window.WebglAddon.WebglAddon();
             this.term.loadAddon(webgl);
-            isWebglEnabled = true;
         }
         catch (e) {
             console.warn("WebGL addon threw an exception during load", e);

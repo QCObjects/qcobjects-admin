@@ -6,6 +6,8 @@ require("../handlers/config");
 require("../libs/config");
 require("../version/config");
 require("../cmdshell/config");
+require("../client_config/config");
+require("../client_user/config");
 /*
 * The next values are the default settings
 * You can change any value in runtime by using CONFIG.set
@@ -121,6 +123,19 @@ backend.routes.push({
     name: "QCObjects Admin Panel!",
     description: "With this panel, you can manage settings, configurations and install plugins",
     path: "^/admin/shell|/admin/settings/(.*)|/admin/plugins|/admin/handlers|/admin/libs|/admin/(install|uninstall)_(plugins|handlers|libs)/(.*)$",
+    microservice: "qcobjects-admin",
+    headers: {
+        "content-type": "text/html; charset=utf-8"
+    },
+    responseHeaders: {},
+    cors: {
+        "allow_origins": "*"
+    }
+});
+backend.routes.push({
+    name: "QCObjects Admin User Profile",
+    description: "Change your user profile settings",
+    path: "^/admin/user|/admin/user/(.*)$",
     microservice: "qcobjects-admin",
     headers: {
         "content-type": "text/html; charset=utf-8"

@@ -48,7 +48,7 @@ class QCObjectsAdmin extends qcobjects_1.BackendMicroservice {
   <splash-screen componentClass="CubeSplashScreenComponent" 
   duration="3000" data-background="black" 
   data-cube_image="./img/logo-qcobjects-back-bg-white-icon.svg"></splash-screen>
-  <layout-basic splashscreen shadowed=true controllerClass="MainController" data-one="1" data-two="2">
+  <layout-basic splashscreen componentClass="MainComponent" controllerClass="MainController" serviceClass="AuthConnectService" response-to=data >
   </layout-basic>
   <script type="module" src="js/init.js" defer></script>
 </body>

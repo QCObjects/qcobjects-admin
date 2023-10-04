@@ -1,6 +1,15 @@
-<quick-component name="handlers-table"
-    response-to="data" value-field="result"
-    serviceClass="AdminAvailableHandlersService"
-    componentClass="HandlersGridTableComponent"
-    effectClass="MainTransitionEffect"apply-effect-to=observe >
+<style>
+    .install_link {
+        background: lightgray;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 7px;
+        text-decoration: none;
+        color: #1d9b1e;
+    }
+</style>
+
+<quick-component name="handlers-table" response-to="data" value-field="result"
+    serviceClass="AdminAvailableHandlersService" componentClass="HandlersGridTableComponent"
+    effectClass="MainTransitionEffect" apply-effect-to=observe>
 </quick-component>

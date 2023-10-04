@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../../build/static/js/packages/com.qcobjects.main.components.js"],
+  "sourcesContent": ["\"use strict\";\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.MainComponent = void 0;\nconst qcobjects_1 = require(\"qcobjects\");\nconst com_qcobjects_auth_login_1 = require(\"./com.qcobjects.auth.login\");\nclass MainComponent extends com_qcobjects_auth_login_1.AuthComponent {\n}\nexports.MainComponent = MainComponent;\n(0, qcobjects_1.Package)(\"com.qcobjects.main.components\", [\n    MainComponent\n]);\n"],
+  "mappings": "+HAAA,IAAAA,EAAAC,EAAAC,GAAA,CACA,OAAO,eAAeA,EAAS,aAAc,CAAE,MAAO,EAAK,CAAC,EAC5DA,EAAQ,cAAgB,OACxB,IAAMC,EAAc,IACdC,EAA6B,IAC7BC,EAAN,cAA4BD,EAA2B,aAAc,CACrE,EADME,EAAAD,EAAA,iBAENH,EAAQ,cAAgBG,KACpBF,EAAY,SAAS,gCAAiC,CACtDE,CACJ,CAAC",
+  "names": ["require_com_qcobjects_main_components", "__commonJSMin", "exports", "qcobjects_1", "com_qcobjects_auth_login_1", "MainComponent", "__name"]
+}

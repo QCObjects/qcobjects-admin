@@ -1,0 +1,19 @@
+.snippet-svg {
+    display: block;
+    background-color: #0b0d19;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 7px;
+    box-shadow: rgba(228, 228, 234, 0.22) 0 22px 25px 0, rgb(0 0 0 / 87%) 0 9px 23px 0;
+}
+
+.snippet-svg:hover {
+    box-shadow: #e4e4ea38 0 22px 25px, #000000de 6px 13px 23px;
+
+}
+svg text{
+    font-size: x-small;
+    text-align: center;
+  }
+  

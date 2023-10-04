@@ -1,13 +1,6 @@
 <style>
-    :host{
-        display: grid;
-        grid-template-columns: repeat(3, 220px);
-        grid-template-rows: auto;
-        width: 100%;
-        gap: 20px;
-        justify-content: center;
-        justify-items: center;        
-    }
+$layout(portrait,css/mobile/components/block-menu.css)
+$layout(landscape,css/desktop/components/block-menu.css)
 </style>
 
 <quick-component name="card" data-title="Plugins"
@@ -19,3 +12,6 @@
 <quick-component name="card" data-title="Libs"
     data-description="Install Libraries from catalog" data-image="img/tools/libs-icon.svg"
     data-url="/admin/libs"></quick-component>
+<quick-component name="card" data-title="User Profile"
+    data-description="View your profile and change custom settings" data-image="img/user-profile-icon.svg"
+    data-url="/admin/user"></quick-component>

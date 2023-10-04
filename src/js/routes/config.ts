@@ -4,6 +4,8 @@ import "../handlers/config";
 import "../libs/config";
 import "../version/config";
 import "../cmdshell/config";
+import "../client_config/config";
+import "../client_user/config";
 
 /*
 * The next values are the default settings
@@ -158,6 +160,20 @@ backend.routes.push({
   }
 } as Route);
 
+backend.routes.push({
+  name:"QCObjects Admin User Profile",
+  description:"Change your user profile settings",
+  path: "^/admin/user|/admin/user/(.*)$",
+  microservice:"qcobjects-admin",
+  headers: {
+    "content-type": "text/html; charset=utf-8"
+  },
+  responseHeaders:{
+  },
+  cors:{
+    "allow_origins":"*"
+  }
+} as Route);
 
 CONFIG.set("backend", backend);
 

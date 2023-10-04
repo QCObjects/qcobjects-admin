@@ -35,7 +35,7 @@ class GridTableComponent extends Component {
 
     gridColumns?:Array<any>;
 
-    __instanceID: number | undefined;
+    __instanceID!: number;
 
     constructor(o:GridComponentParams){
         super(o);

@@ -1,4 +1,6 @@
 import "./com.qcobjects.installer";
+import "./com.qcobjects.auth.login";
+import "./com.qcobjects.main.components";
 import "./org.quickcorp.custom.effects";
 import "./org.quickcorp.custom.models";
 import "./com.qcobjects.admin.components";
@@ -9,3 +11,4 @@ import "./com.qcobjects.sdk.components";
 import "./com.qcobjects.admin.plugins.controllers";
 import "./com.qcobjects.admin.openshell.controllers";
 import "./services/com.qcobjects.admin.static.services";
+import "./services/com.qcobjects.admin.static.auth.services";

@@ -12,7 +12,7 @@ qcobjects_1.CONFIG.set("relativeImportPath", "js/packages/");
 qcobjects_1.CONFIG.set("componentsBasePath", "templates/components/");
 qcobjects_1.CONFIG.set("delayForReady", 1); // delay to wait before executing the first ready event, it includes imports
 qcobjects_1.CONFIG.set("preserveComponentBodyTag", false); // don't use <componentBody></componentBody> tag
-qcobjects_1.CONFIG.set("useConfigService", false); // Load settings from config.json
+qcobjects_1.CONFIG.set("useConfigService", true); // Load settings from config.json
 qcobjects_1.CONFIG.set("routingWay", "pathname"); // routingWay possible values are 'hash','pathname','search'
 qcobjects_1.CONFIG.set("useLocalSDK", true); // on the frontend side you can chose whether to load the SDK from sdk.qcobjects.dev or from your local website
 qcobjects_1.CONFIG.set("tplextension", "tpl.html"); // this is the file extension to locate the template files (if component.name = 'main' then template name will be main.tpl.html)

@@ -1,0 +1,49 @@
+<style>
+    .container {
+        border: none;
+        background: #f3f3f3;
+        box-shadow: rgba(228, 228, 234, 0.22) 0 22px 25px 0, rgba(228, 228, 234, 0.5) 0 9px 23px 0;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 370px;
+        display: block;
+    }
+    .container:hover {
+        box-shadow: rgba(228, 228, 234, 0.56) 0 22px 32px 0, rgba(228, 228, 234, 0.64) 0 9px 28px 0;
+    }
+
+    .row {
+        display: flex;
+        border-block-end: 1px solid lightgray;
+    }
+
+    .column {
+        display: flex;
+        justify-content: flex-start;
+        width: 50%;
+        align-items: center;
+        align-content: center;
+        margin: 15px;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="column">
+            <img width="115px" src="img/user-profile-icon.svg" alt="user profile picture" />
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="column">
+            <a href="/admin/user/change_password">Change Password</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <a href="/admin/user/logout">Logout</a>
+        </div>
+    </div>
+</div>

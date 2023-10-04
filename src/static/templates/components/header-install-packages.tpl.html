@@ -1,10 +1,7 @@
 <style>
-$layout(landscape,css/desktop/components/header.css)
-$layout(portrait,css/mobile/components/header.css)
-svg text{
-  font-size: x-small;
-  text-align: center;
-}
+  @import url("css/snippet.css");
+  $layout(landscape,css/desktop/components/header.css)
+  $layout(portrait,css/mobile/components/header.css)
 </style>
 <div class="header-container">
   <quick-component class="snippet-svg" name="../../assets/img/commands/npm-install_uninstall-package" data-package="{{package}}" data-operation="{{operation}}" tplextension="svg" cached=false

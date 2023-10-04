@@ -1,2 +1,2 @@
-import{a}from"../chunks/chunk-BZQQMCTW.js";import"../chunks/chunk-4BSOXMA3.js";export default a();
+import{a}from"../chunks/chunk-75HPBQZB.js";import"../chunks/chunk-NOVTE6NR.js";import"../chunks/chunk-LILTOOK2.js";export default a();
 //# sourceMappingURL=com.qcobjects.installer.js.map

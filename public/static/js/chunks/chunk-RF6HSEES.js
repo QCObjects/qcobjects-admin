@@ -1,0 +1,2 @@
+import{a as n}from"./chunk-2WUJNJCI.js";import{b as s}from"./chunk-NOVTE6NR.js";import{a as o,d as t}from"./chunk-LILTOOK2.js";var i=t(c=>{Object.defineProperty(c,"__esModule",{value:!0});c.MainComponent=void 0;var r=s(),u=n(),e=class extends u.AuthComponent{};o(e,"MainComponent");c.MainComponent=e;(0,r.Package)("com.qcobjects.main.components",[e])});export{i as a};
+//# sourceMappingURL=chunk-RF6HSEES.js.map

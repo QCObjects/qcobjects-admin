@@ -19,7 +19,7 @@ export class SQLite3Engine extends DBEngine implements IDBEngine{
 
         const queryContainer = async () => {
             return await gateway.queryContainer(this.databaseName, this.__collection, `
-              SELECT rowId,id,partitionKey,Country,parents,children,address,isRegistered,lastName from tabletest;
+              SELECT rowId,* from ${this.__collection} ;
             `,{});
         };
         return (async ()=> {

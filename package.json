@@ -92,7 +92,7 @@
     },
     "dependencies": {
         "@pwabuilder/pwaauth": "^0.9.7",
-        "qcobjects-admin-lib-db-sqlite3": "file:../qcobjects-admin-lib-db-sqlite3",
+        "qcobjects-admin-lib-db-sqlite3": "github:QCObjects/qcobjects-admin-lib-db-sqlite3#v2.4-ts",
         "xterm": "^5.1.0-beta.90"
     },
     "engines": {

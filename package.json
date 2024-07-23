@@ -1,6 +1,6 @@
 {
     "name": "qcobjects-admin",
-    "private": true,
+    "private": false,
     "version": "1.0.0",
     "description": "With this panel, you can manage settings, configurations and install plugins",
     "main": "public/js/index.cjs",

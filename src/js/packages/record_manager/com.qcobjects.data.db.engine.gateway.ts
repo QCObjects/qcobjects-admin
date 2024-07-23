@@ -34,9 +34,17 @@ export const setEngine = (configObj:IDBEngine) => {
     const engineName = configObj.name;
     if (typeof DBSelectedEngine.engineInstance === "undefined"){
         DBSelectedEngine.selectedEngineName = engineName;
-        const EngineClass = engines[DBSelectedEngine.selectedEngineName as keyof typeof engines];
-        const engine = new EngineClass();
-        DBSelectedEngine.engineInstance = engine;
+        if (`${DBSelectedEngine.selectedEngineName}` === ""){
+            throw new Error ("DB Engine parameter empty.");
+        } else {
+            if (DBSelectedEngine.selectedEngineName in engines){
+                const EngineClass = engines[DBSelectedEngine.selectedEngineName as keyof typeof engines];
+                const engine = new EngineClass();
+                DBSelectedEngine.engineInstance = engine;
+            } else {
+                throw new Error (`Engine ${DBSelectedEngine.selectedEngineName} is not available. Use one of: ${Object.keys(engines)}.`);
+            }
+        }
     }
     return DBSelectedEngine.engineInstance;
 };

@@ -20,7 +20,7 @@ class SQLite3Engine extends com_qcobjects_data_db_engines_1.DBEngine {
         })();
         const queryContainer = async () => {
             return await gateway.queryContainer(this.databaseName, this.__collection, `
-              SELECT rowId,id,partitionKey,Country,parents,children,address,isRegistered,lastName from tabletest;
+              SELECT rowId,* from ${this.__collection} ;
             `, {});
         };
         return (async () => {
@@ -54,7 +54,7 @@ class SQLite3Engine extends com_qcobjects_data_db_engines_1.DBEngine {
         return this;
     }
     async save(item) {
-        throw new Error("Method not implemented.");
+        return await gateway.updateFamilyItem(this.databaseName, this.__collection, item);
     }
 }
 exports.SQLite3Engine = SQLite3Engine;

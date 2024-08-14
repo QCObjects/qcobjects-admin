@@ -5,3 +5,5 @@ Package("qcobjects-admin",
 Package("com.qcobjects.api.services.admin",[
     QCObjectsAdmin
 ]) as Array<never>);
+
+export default QCObjectsAdmin;

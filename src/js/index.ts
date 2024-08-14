@@ -1,4 +1,3 @@
 import "./config";
-import api from "./packages/com.qcobjects.api.services";
-import "./package";
+import api from "./package";
 export default api;

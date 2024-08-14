@@ -31,11 +31,13 @@ declare module "js/packages/com.qcobjects.api.services" {
     }
     export default QCObjectsAdmin;
 }
-declare module "js/package" { }
+declare module "js/package" {
+    import QCObjectsAdmin from "js/packages/com.qcobjects.api.services";
+    export default QCObjectsAdmin;
+}
 declare module "js/index" {
     import "js/config";
-    import api from "js/packages/com.qcobjects.api.services";
-    import "js/package";
+    import api from "js/package";
     export default api;
 }
 declare module "js/packages/services/com.qcobjects.admin.services.npm" {

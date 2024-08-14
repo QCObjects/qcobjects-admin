@@ -4,6 +4,5 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 require("./config");
-const com_qcobjects_api_services_1 = __importDefault(require("./packages/com.qcobjects.api.services"));
-require("./package");
-exports.default = com_qcobjects_api_services_1.default;
+const package_1 = __importDefault(require("./package"));
+exports.default = package_1.default;

@@ -8,3 +8,4 @@ const com_qcobjects_api_services_1 = __importDefault(require("./packages/com.qco
 (0, qcobjects_1.Package)("qcobjects-admin", (0, qcobjects_1.Package)("com.qcobjects.api.services.admin", [
     com_qcobjects_api_services_1.default
 ]));
+exports.default = com_qcobjects_api_services_1.default;

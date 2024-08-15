@@ -36,15 +36,24 @@ class AuthUserHandler extends qcobjects_1.BackendMicroservice {
         (() => {
             return new Promise((resolve) => {
                 const accessToken = this.extractAccessToken();
-                this.auth(accessToken)
-                    .then((user) => {
-                    this.body = (0, qcobjects_1._DataStringify)({
-                        userAccessToken: user?.accessToken,
-                        user,
-                        authenticated: true
-                    });
+                (async () => {
+                    const user = await this.auth(accessToken);
+                    if (user !== undefined) {
+                        this.body = (0, qcobjects_1._DataStringify)({
+                            userAccessToken: user?.accessToken,
+                            user,
+                            authenticated: true
+                        });
+                    }
+                    else {
+                        this.body = (0, qcobjects_1._DataStringify)({
+                            userAccessToken: "",
+                            user: {},
+                            authenticated: false
+                        });
+                    }
                     resolve();
-                });
+                })();
             });
         })()
             .then(() => {

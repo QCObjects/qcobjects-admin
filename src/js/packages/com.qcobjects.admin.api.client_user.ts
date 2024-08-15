@@ -53,17 +53,24 @@ class AuthUserHandler extends BackendMicroservice {
     ((): Promise<void> => {
       return new Promise((resolve) => {
         const accessToken = this.extractAccessToken();
-        this.auth(accessToken)
-        .then((user:UserVO| undefined)=>{
-          this.body = _DataStringify({
-            userAccessToken: user?.accessToken,
-            user,
-            authenticated: true
-          } as AuthData);
-  
+        (async ()=> {
+          const user:UserVO | undefined = await this.auth(accessToken);
+          if (user !== undefined) {
+            this.body = _DataStringify({
+              userAccessToken: user?.accessToken,
+              user,
+              authenticated: true
+            } as AuthData);
+          } else {
+            this.body = _DataStringify({
+              userAccessToken: "",
+              user:{},
+              authenticated: false
+            } as AuthData);
+          }
+
           resolve();
-  
-        });
+        })();
 
       });
     })()

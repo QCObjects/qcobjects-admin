@@ -8,3 +8,4 @@ const com_qcobjects_admin_api_installPlugin_1 = __importDefault(require("../../p
 (0, qcobjects_1.Package)("qcobjects-admin/plugins/i", (0, qcobjects_1.Package)("qcobjects-admin/public/js/plugins/i/index.cjs", (0, qcobjects_1.Package)("com.qcobjects.admin.api.plugins", [
     com_qcobjects_admin_api_installPlugin_1.default
 ])));
+exports.default = com_qcobjects_admin_api_installPlugin_1.default;

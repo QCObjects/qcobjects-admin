@@ -7,3 +7,4 @@ Package("com.qcobjects.admin.api.plugins",[
     UninstallPluginsApi
 ]) as Array<never>));
 
+export default UninstallPluginsApi;

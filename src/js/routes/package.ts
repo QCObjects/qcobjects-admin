@@ -7,3 +7,4 @@ Package("com.qcobjects.admin.api.routes",[
     DisplayRoutes
 ]) as Array<never>));
 
+export default DisplayRoutes;

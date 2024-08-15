@@ -1,2 +1,0 @@
-import{b as s}from"./chunk-64ZU2WSF.js";import{d as i}from"./chunk-LILTOOK2.js";var o=i(e=>{Object.defineProperty(e,"__esModule",{value:!0});var t=s();(0,t.RegisterWidgets)("layout-basic","splash-screen","github-grid","octocat-icon","lib-list");(0,t.RegisterWidgets)("gitpod-button","netlify-button","aws-button","github-button","codespaces-button","deploy-grid");(0,t.RegisterWidget)("version-string")});export{o as a};
-//# sourceMappingURL=chunk-UCK7BHYZ.js.map

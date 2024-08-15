@@ -8,3 +8,4 @@ const com_qcobjects_admin_api_routes_1 = __importDefault(require("../packages/co
 (0, qcobjects_1.Package)("qcobjects-admin/routes", (0, qcobjects_1.Package)("qcobjects-admin/public/js/routes/index.cjs", (0, qcobjects_1.Package)("com.qcobjects.admin.api.routes", [
     com_qcobjects_admin_api_routes_1.default
 ])));
+exports.default = com_qcobjects_admin_api_routes_1.default;

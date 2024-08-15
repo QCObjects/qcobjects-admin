@@ -8,3 +8,4 @@ const com_qcobjects_admin_api_client_config_1 = __importDefault(require("../pack
 (0, qcobjects_1.Package)("qcobjects-admin/client_config", (0, qcobjects_1.Package)("qcobjects-admin/public/js/client_config/index.cjs", (0, qcobjects_1.Package)("com.qcobjects.admin.api.client_config", [
     com_qcobjects_admin_api_client_config_1.default
 ])));
+exports.default = com_qcobjects_admin_api_client_config_1.default;

@@ -1,2 +1,0 @@
-import{b as i}from"./chunk-64ZU2WSF.js";import{a as t,d as c}from"./chunk-LILTOOK2.js";var r=c(s=>{Object.defineProperty(s,"__esModule",{value:!0});var o=i();(0,o.Package)("org.quickcorp.custom.views",[t(class extends o.View{done(...d){let n=super.done(d),e=this.component;return e!==void 0&&e.body!==void 0&&(e.body.style.display="block",e.body.style.width="100px",e.body.style.height="100px"),n}},"CardView")])});export{r as a};
-//# sourceMappingURL=chunk-UPPKBG5K.js.map

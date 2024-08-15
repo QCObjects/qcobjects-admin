@@ -7,3 +7,4 @@ Package("com.qcobjects.admin.api.plugins",[
     InstallPluginsApi
 ]) as Array<never>));
 
+export default InstallPluginsApi;

@@ -7,3 +7,4 @@ Package("com.qcobjects.admin.api.client_user",[
     UserApi
 ]) as Array<never>));
 
+export default UserApi;

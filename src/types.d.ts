@@ -40,104 +40,6 @@ declare module "js/index" {
     import api from "js/package";
     export default api;
 }
-declare module "js/packages/services/com.qcobjects.admin.services.npm" {
-    import { Service } from "qcobjects";
-    type StandardResponse = {
-        request: XMLHttpRequest;
-        service: Service;
-    };
-    type NPMProject = {
-        package: {
-            name: string;
-            scope: string;
-            version: string;
-            description: string;
-            keywords: Array<string>;
-            date: string;
-            links: {
-                npm: string;
-                homepage: string;
-                repository: string;
-                bugs: string;
-            };
-            author: {
-                name: string;
-                url: string;
-            };
-            publisher: {
-                username: string;
-                email: string;
-            };
-            maintainers: Array<{
-                username: string;
-                email: string;
-            }>;
-        };
-        flags: {
-            unstable: boolean;
-        };
-        score: {
-            final: number;
-            detail: {
-                quality: number;
-                popularity: number;
-                maintenance: number;
-            };
-        };
-        searchScore: number;
-    };
-    type NPMQCObjectsResponse = {
-        total: number;
-        time: string;
-        objects: Array<NPMProject>;
-    };
-    class NPMService extends Service {
-        name: string;
-        external: boolean;
-        cached: boolean;
-        method: string;
-        headers: {};
-        withCredentials: boolean;
-        done({ service }: StandardResponse): void;
-    }
-    class NPMQCObjectsPluginsService extends NPMService {
-        name: string;
-        url: string;
-    }
-    class NPMQCObjectsHandlersService extends NPMService {
-        name: string;
-        url: string;
-    }
-    class NPMQCObjectsLibsService extends NPMService {
-        name: string;
-        url: string;
-    }
-    export { NPMQCObjectsResponse, NPMQCObjectsHandlersService, NPMQCObjectsPluginsService, NPMQCObjectsLibsService, NPMProject };
-}
-declare module "js/packages/services/serviceLoaderNode" {
-    import { Service } from "qcobjects";
-    const serviceLoaderNode: (service: Service) => Promise<{
-        request: any;
-        service: Service;
-    }>;
-    export default serviceLoaderNode;
-}
-declare module "js/packages/tools/packageInfo" {
-    const packageInfo: (pName: string) => {
-        name: string;
-        description: string;
-        version: string;
-        "repository.url": string;
-    };
-    export default packageInfo;
-}
-declare module "js/packages/com.qcobjects.admin.api.libs" {
-    import { BackendMicroservice } from "qcobjects";
-    class PluginsHandler extends BackendMicroservice {
-        done(): void;
-    }
-    export default PluginsHandler;
-}
 declare module "js/packages/com.qcobjects.admin.api.client_config" {
     import { BackendMicroservice } from "qcobjects";
     class ConfigHandler extends BackendMicroservice {
@@ -148,11 +50,13 @@ declare module "js/packages/com.qcobjects.admin.api.client_config" {
     }
     export default ConfigHandler;
 }
-declare module "js/client_config/package" { }
+declare module "js/client_config/package" {
+    import ClientConfigApi from "js/packages/com.qcobjects.admin.api.client_config";
+    export default ClientConfigApi;
+}
 declare module "js/client_config/index" {
     import "js/client_config/config";
-    import api from "js/packages/com.qcobjects.admin.api.libs";
-    import "js/client_config/package";
+    import api from "js/client_config/package";
     export default api;
 }
 declare module "js/packages/record_manager/com.qcobjects.data.db.engines" {
@@ -414,11 +318,13 @@ declare module "js/packages/com.qcobjects.admin.api.client_user" {
     }
     export default AuthUserHandler;
 }
-declare module "js/client_user/package" { }
+declare module "js/client_user/package" {
+    import UserApi from "js/packages/com.qcobjects.admin.api.client_user";
+    export default UserApi;
+}
 declare module "js/client_user/index" {
     import "js/client_user/config";
-    import api from "js/packages/com.qcobjects.admin.api.client_user";
-    import "js/client_user/package";
+    import api from "js/client_user/package";
     export default api;
 }
 declare module "js/packages/tools/cmdShell" {
@@ -435,12 +341,105 @@ declare module "js/packages/com.qcobjects.admin.api.cmdshell" {
     }
     export default CMDShell;
 }
-declare module "js/cmdshell/package" { }
+declare module "js/cmdshell/package" {
+    import CMDShellApi from "js/packages/com.qcobjects.admin.api.cmdshell";
+    export default CMDShellApi;
+}
 declare module "js/cmdshell/index" {
     import "js/cmdshell/config";
-    import api from "js/packages/com.qcobjects.admin.api.cmdshell";
-    import "js/cmdshell/package";
+    import api from "js/cmdshell/package";
     export default api;
+}
+declare module "js/packages/services/com.qcobjects.admin.services.npm" {
+    import { Service } from "qcobjects";
+    type StandardResponse = {
+        request: XMLHttpRequest;
+        service: Service;
+    };
+    type NPMProject = {
+        package: {
+            name: string;
+            scope: string;
+            version: string;
+            description: string;
+            keywords: Array<string>;
+            date: string;
+            links: {
+                npm: string;
+                homepage: string;
+                repository: string;
+                bugs: string;
+            };
+            author: {
+                name: string;
+                url: string;
+            };
+            publisher: {
+                username: string;
+                email: string;
+            };
+            maintainers: Array<{
+                username: string;
+                email: string;
+            }>;
+        };
+        flags: {
+            unstable: boolean;
+        };
+        score: {
+            final: number;
+            detail: {
+                quality: number;
+                popularity: number;
+                maintenance: number;
+            };
+        };
+        searchScore: number;
+    };
+    type NPMQCObjectsResponse = {
+        total: number;
+        time: string;
+        objects: Array<NPMProject>;
+    };
+    class NPMService extends Service {
+        name: string;
+        external: boolean;
+        cached: boolean;
+        method: string;
+        headers: {};
+        withCredentials: boolean;
+        done({ service }: StandardResponse): void;
+    }
+    class NPMQCObjectsPluginsService extends NPMService {
+        name: string;
+        url: string;
+    }
+    class NPMQCObjectsHandlersService extends NPMService {
+        name: string;
+        url: string;
+    }
+    class NPMQCObjectsLibsService extends NPMService {
+        name: string;
+        url: string;
+    }
+    export { NPMQCObjectsResponse, NPMQCObjectsHandlersService, NPMQCObjectsPluginsService, NPMQCObjectsLibsService, NPMProject };
+}
+declare module "js/packages/services/serviceLoaderNode" {
+    import { Service } from "qcobjects";
+    const serviceLoaderNode: (service: Service) => Promise<{
+        request: any;
+        service: Service;
+    }>;
+    export default serviceLoaderNode;
+}
+declare module "js/packages/tools/packageInfo" {
+    const packageInfo: (pName: string) => {
+        name: string;
+        description: string;
+        version: string;
+        "repository.url": string;
+    };
+    export default packageInfo;
 }
 declare module "js/packages/com.qcobjects.admin.api.handlers" {
     import { BackendMicroservice } from "qcobjects";
@@ -449,18 +448,29 @@ declare module "js/packages/com.qcobjects.admin.api.handlers" {
     }
     export default PluginsHandler;
 }
-declare module "js/handlers/package" { }
+declare module "js/handlers/package" {
+    import HandlersApi from "js/packages/com.qcobjects.admin.api.handlers";
+    export default HandlersApi;
+}
 declare module "js/handlers/index" {
     import "js/handlers/config";
-    import api from "js/packages/com.qcobjects.admin.api.handlers";
-    import "js/handlers/package";
+    import api from "js/handlers/package";
     export default api;
 }
-declare module "js/libs/package" { }
+declare module "js/packages/com.qcobjects.admin.api.libs" {
+    import { BackendMicroservice } from "qcobjects";
+    class PluginsHandler extends BackendMicroservice {
+        done(): void;
+    }
+    export default PluginsHandler;
+}
+declare module "js/libs/package" {
+    import LibsApi from "js/packages/com.qcobjects.admin.api.libs";
+    export default LibsApi;
+}
 declare module "js/libs/index" {
     import "js/libs/config";
-    import api from "js/packages/com.qcobjects.admin.api.libs";
-    import "js/libs/package";
+    import api from "js/libs/package";
     export default api;
 }
 declare module "js/packages/com.qcobjects.admin.api.installPlugin" {
@@ -498,39 +508,49 @@ declare module "js/packages/com.qcobjects.admin.api.version" {
     }
     export default VersionHandler;
 }
-declare module "js/plugins/package" { }
+declare module "js/plugins/package" {
+    import PluginsApi from "js/packages/com.qcobjects.admin.api.plugins";
+    export default PluginsApi;
+}
 declare module "js/plugins/index" {
     import "js/plugins/config";
-    import api from "js/packages/com.qcobjects.admin.api.plugins";
-    import "js/plugins/package";
+    import api from "js/plugins/package";
     export default api;
 }
-declare module "js/plugins/i/package" { }
+declare module "js/plugins/i/package" {
+    import InstallPluginsApi from "js/packages/com.qcobjects.admin.api.installPlugin";
+    export default InstallPluginsApi;
+}
 declare module "js/plugins/i/index" {
     import "js/plugins/i/config";
-    import api from "js/packages/com.qcobjects.admin.api.installPlugin";
-    import "js/plugins/i/package";
+    import api from "js/plugins/i/package";
     export default api;
 }
-declare module "js/plugins/u/package" { }
+declare module "js/plugins/u/package" {
+    import UninstallPluginsApi from "js/packages/com.qcobjects.admin.api.uninstallPlugin";
+    export default UninstallPluginsApi;
+}
 declare module "js/plugins/u/index" {
     import "js/plugins/u/config";
-    import api from "js/packages/com.qcobjects.admin.api.uninstallPlugin";
-    import "js/plugins/u/package";
+    import api from "js/plugins/u/package";
     export default api;
 }
-declare module "js/routes/package" { }
+declare module "js/routes/package" {
+    import DisplayRoutes from "js/packages/com.qcobjects.admin.api.routes";
+    export default DisplayRoutes;
+}
 declare module "js/routes/index" {
     import "js/routes/config";
-    import api from "js/packages/com.qcobjects.admin.api.routes";
-    import "js/routes/package";
+    import api from "js/routes/package";
     export default api;
 }
-declare module "js/version/package" { }
+declare module "js/version/package" {
+    import VersionAPI from "js/packages/com.qcobjects.admin.api.version";
+    export default VersionAPI;
+}
 declare module "js/version/index" {
     import "js/version/config";
-    import api from "js/packages/com.qcobjects.admin.api.version";
-    import "js/version/package";
+    import api from "js/version/package";
     export default api;
 }
 declare module "static/js/config" { }

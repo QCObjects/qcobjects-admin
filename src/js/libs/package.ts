@@ -7,3 +7,4 @@ Package("com.qcobjects.admin.api.libs",[
     LibsApi
 ]) as Array<never>));
 
+export default LibsApi;

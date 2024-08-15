@@ -8,3 +8,4 @@ const com_qcobjects_admin_api_uninstallPlugin_1 = __importDefault(require("../..
 (0, qcobjects_1.Package)("qcobjects-admin/plugins/u", (0, qcobjects_1.Package)("qcobjects-admin/public/js/plugins/u/index.cjs", (0, qcobjects_1.Package)("com.qcobjects.admin.api.plugins", [
     com_qcobjects_admin_api_uninstallPlugin_1.default
 ])));
+exports.default = com_qcobjects_admin_api_uninstallPlugin_1.default;

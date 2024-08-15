@@ -8,3 +8,4 @@ const com_qcobjects_admin_api_cmdshell_1 = __importDefault(require("../packages/
 (0, qcobjects_1.Package)("qcobjects-admin/cmdshell", (0, qcobjects_1.Package)("qcobjects-admin/public/js/cmdshell/index.cjs", (0, qcobjects_1.Package)("com.qcobjects.admin.api.cmdshell", [
     com_qcobjects_admin_api_cmdshell_1.default
 ])));
+exports.default = com_qcobjects_admin_api_cmdshell_1.default;

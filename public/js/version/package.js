@@ -8,3 +8,4 @@ const com_qcobjects_admin_api_version_1 = __importDefault(require("../packages/c
 (0, qcobjects_1.Package)("qcobjects-admin/full-version", (0, qcobjects_1.Package)("qcobjects-admin/public/js/version/index.cjs", (0, qcobjects_1.Package)("com.qcobjects.admin.api.version", [
     com_qcobjects_admin_api_version_1.default
 ])));
+exports.default = com_qcobjects_admin_api_version_1.default;

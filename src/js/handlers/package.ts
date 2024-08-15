@@ -7,3 +7,5 @@ Package("com.qcobjects.admin.api.handlers",[
     HandlersApi
 ]) as Array<never>));
 
+export default HandlersApi;
+

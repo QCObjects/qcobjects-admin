@@ -7,3 +7,4 @@ Package("com.qcobjects.admin.api.version",[
     VersionAPI
 ]) as Array<never>));
 
+export default VersionAPI;
